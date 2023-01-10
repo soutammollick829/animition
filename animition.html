@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animition project</title>
+    <Style>
+        .ball{
+            width: 25px;
+            height: 25px;
+            background-color: brown;
+            border-radius: 50%;
+            position: relative;
+            left: 535px;
+            bottom: 40px;
+
+        }
+        .bat{
+            transition: transform 0.2s ease-in;
+            margin-left: 50px
+        }
+        .ball{
+            transition:transform 1s ease-in-out 0.3s;
+        }
+  
+        img{
+            height: 300px;
+            
+        }
+        .filed{
+            border: 5px solid salmon;
+      background-color: rgb(18, 165, 116);
+      border-radius: 20%;
+     
+        }
+        
+   .filed:hover .bat{
+ transform: rotate(-80deg);
+ transform-origin: top right;
+
+   }
+   .filed:hover .ball{
+     transform:translate(450px,-150px)
+   }
+
+    </Style>
+</head>
+<body>
+   <div class="filed">
+    <img class="bat" src="image/bat.png" alt="">
+
+    <div class="ball">
+    </div>
+ 
+   </div>
+
+</body>
+</html>
