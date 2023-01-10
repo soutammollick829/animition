@@ -43,6 +43,45 @@
    .filed:hover .ball{
      transform:translate(450px,-150px)
    }
+   .stage{
+    height: 400px;
+    width: 400px;
+    background-color:#2d98c9c7 ;
+    border: 2px solid rgb(238, 143, 143);
+    margin: 250px;
+    display: flex;
+   }
+.black-ball{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(192, 43, 43);
+    border-radius: 50%;
+    position: relative;
+    animation:sliding 2s ease-in-out 0.5s  infinite;
+    animation-play-state: running;
+   
+}
+@keyframes sliding {
+    0%{
+        background-color:rgb(192, 43, 43) ;
+        left: 0;
+        top: 0;
+    }
+    25%{
+        top: 350px;
+        transform: scale(0.5);
+        background-color:rgb(48, 192, 43) ;
+
+    }
+    50%{
+        top: 0px;
+    }
+    100%{
+        background-color: rgb(192, 110, 43);
+        left:350px ;
+        top: 350px;
+    }
+}
 
     </Style>
 </head>
@@ -54,6 +93,15 @@
     </div>
  
    </div>
+   <div class="stage">
+    <div class="black-ball"></div>
+  
+ 
+   
+
+   
+   </div>
+   
 
 </body>
 </html>
